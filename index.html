@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo do Ciclista</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Jogo do Ciclista</h1>
-    <div id="game-area">
-        <div id="cyclist"></div>
-        <div id="moto"></div>
-    </div>
-    <script src="script.js"></script>
-</body>
+  <head>
+    <!-- Define o tipo de documento como HTML5 -->
+    <meta charset="UTF-8" />
+    <!-- Configura a visualização para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primeiros passos com Three.js</title>
+    <style>
+      /* Remove margens padrão da página */
+      body {
+        margin: 0;
+        /* Evita que a página tenha barra de rolagem desnecessária */
+        overflow: hidden;
+      }
+    </style>
+    <!-- Importmap para carregar módulos de forma eficiente -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.module.js",
+          "jsm/": "https://cdn.jsdelivr.net/npm/three@0.161.0/examples/jsm/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Script principal contendo o código do Three.js -->
+    <script type="module" src="index.js"></script>
+  </body>
 </html>
