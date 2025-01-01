@@ -16,7 +16,7 @@ const aspect = width / height; // Proporção da tela (largura / altura)
 const near = 0.1; // Distância mínima para objetos visíveis
 const far = 10; // Distância máxima para objetos visíveis
 const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-camera.position.z = 2; // Posição inicial da câmera no eixo Z
+camera.position.z = 4; // Posição inicial da câmera no eixo Z
 
 // Criação da cena
 const scene = new THREE.Scene();
